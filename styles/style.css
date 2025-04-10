@@ -8,13 +8,29 @@ body {
   font-family: Arial, sans-serif;
   background-color: #fff;
   color: #222;
+  margin: 0;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 30px 60px;
+  width: 100%;
+
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.location {
+  height: 40px;
+  display: block;
 }
 
 .logo {
@@ -64,7 +80,7 @@ body {
 }
 
 .text-content h1 {
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
@@ -72,15 +88,15 @@ body {
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 30px;
-  color: #555;
+  color: #000000;
 }
 
 .join-btn {
   background-color: #00798a;
   color: white;
-  padding: 12px 24px;
+  padding: 12px 14px;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 12px;
   font-weight: bold;
   transition: background-color 0.3s;
 }
@@ -91,10 +107,236 @@ body {
 
 .image-content {
   max-width: 400px;
-  margin-left: -2%;
 }
 
 .event-img {
   width: 100%;
   height: auto;
+}
+
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.events-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* делает отступ между текстом и картинкой */
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 100px;
+}
+
+.cards {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: space-between; 
+}
+
+.card {
+  flex-basis: calc(25% - 20px); /* это 4 карточки в ряд!!!! */
+}
+
+
+/* Стили для заголовка карточки */
+.card-title {
+  font-size:14px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+/* Стили для категорий и даты */
+.card-category,
+.card-info {
+  font-size: 10px;
+  color: #4b4b4b;
+  margin: 8px 16px;
+}
+
+/* Стили для нижней части карточки */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+/* Левая часть нижней строки (пользователь) */
+.card-footer-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Правая часть нижней строки (билет) */
+.card-footer-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Иконки в нижней строке */
+.card-footer img {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+
+
+.eventsC {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.seallev {
+  text-decoration: none;
+  color:  #00798a;
+}
+
+
+
+
+
+
+.meetup-stories {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.meetup-stories h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.meetup-stories p {
+  color: #707070;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.story-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.story-card {
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.story-card img {
+  width: 100%;
+  height: auto;
+}
+
+.story-card h3 {
+  font-size: 18px;
+  margin: 16px;
+  color: #464646;
+}
+
+.story-card p {
+  font-size: 14px;
+  color: #444;
+  margin: 0 16px 16px 16px;
+  flex-grow: 1;
+}
+
+.story-card a {
+  margin: 0 16px 16px 16px;
+  color: #00798a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.story-card a:hover {
+  text-decoration: underline;
+}
+
+.card.img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  width: 272px;
+  height: 399px;
+  border-radius: 4px;
+}
+
+
+
+.story-card {
+  flex-basis: calc(25% - 20px); /* это 4 карточки в ряд!!!! */
+}
+
+.card-title {
+  font-size: 6px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.card-category,
+.card-info {
+  font-size: 10px;
+  color: #4b4b4b;
+  margin: 8px 16px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.card-footer-left,
+.card-footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.card-footer img {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .card {
+    flex-basis: 100%;
+  }
 }
