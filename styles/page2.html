@@ -1,13 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="./scripts/index2.js"></script>
-    <title>Second page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meetup - Events</title>
+  <link rel="stylesheet" href="style2.css" />
 </head>
 <body>
-    <h1>Events near New York, NY</h1>
+    
+  <header>
+    <div class="nav-left">
+      <img src="./Link - Meetup logo.png" alt="Meetup Logo">
+      <img class="search-img" src="./searchlogo.png" alt="Search">
+    </div>
+    <div class="nav-right">
+      <a href="#">Login</a>
+      <a href="#" class="btn-signup">Sign Up</a>
+    </div>
+  </header>
 
+  <main class="main-layout">
+
+    <section class="events-list">
+      <h1 class="location-title">Events near New York, NY</h1>
+      <h2 class="section-title">Events</h2>
+      
+      <div class="filters">
+        <select id="type-filter">
+          <option value="All">Any type</option>
+          <option value="Online">Online</option>
+          <option value="In-person">In-person</option>
+        </select>
+      
+        <select id="distance-filter">
+          <option value="Any">Any distance</option>
+          <option value="5">Within 5 km</option>
+          <option value="10">Within 10 km</option>
+          <option value="25">Within 25 km</option>
+        </select>
+      
+        <select id="category-filter">
+          <option value="All">All</option>
+          <option value="Hobbies and Passions">Hobbies and Passions</option>
+          <option value="Technology">Technology</option>
+        </select>
+      </div>
+      
+      <div id="eventCards"></div>
+    </section>
+
+    <aside class="sidebar">
+      <p class="map-title">Browse on map</p>
+      <div class="map-placeholder">
+        <img src="./map-thumbnail.png.png" alt="Map">
+        <img class="map-button" src="./Button (2).png" alt="Browse in map">
+      </div>
+    </aside>
+  </main>
+
+  <footer class="custom-footer">
+    <div class="footer-top">
+      <p>Create your own Meetup group.</p>
+      <button class="footer-btn">Get Started</button>
+    </div>
+  
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Your Account</h4>
+        <ul>
+          <li>Sign up</li>
+          <li>Log in</li>
+          <li>Help</li>
+          <li>Become an Affiliate</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Discover</h4>
+        <ul>
+          <li>Groups</li>
+          <li>Calendar</li>
+          <li>Topics</li>
+          <li>Cities</li>
+          <li>Online Events</li>
+          <li>Local Guides</li>
+          <li>Make Friends</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Meetup</h4>
+        <ul>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Meetup Pro</li>
+          <li>Careers</li>
+          <li>Apps</li>
+          <li>Podcast</li>
+        </ul>
+      </div>
+      <div class="footer-column app-links">
+    
+        <img src="./div.flex (4).png" alt="App Store">
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <img src="./Link - Meetup on Facebook → SVG.png"></i>
+        <img src="./Link - Meetup on Twitter → SVG.png"></i>
+        <img src="./Link - Meetup on YouTube → SVG.png"></i>
+        <img src="./Link - Instagram → SVG.png"></i>
+        <img src="./Link - TikTok → SVG.png"></i>
+      </div>
+      <p>© 2024 Meetup</p>
+      <div class="footer-policy">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Do Not Sell or Share My Personal Data</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+  </footer>
+  
+ <script src="./index2.js"></script>
 </body>
 </html>

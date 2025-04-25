@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #1c1c1c;
+    max-width: 1512px;
+    margin: 0 auto;
+  }
+  
+ 
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 72px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 32px;
+    z-index: 1000;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .search-img {
+    height: 36px;
+  }
+  
+  .nav-right a {
+    text-decoration: none;
+    margin-left: 16px;
+    font-size: 14px;
+    color: #1c1c1c;
+  }
+  
+  .btn-signup {
+    background-color: #00798a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+  }
+  .main-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 112px 32px 64px;
+  }
+  
+ 
+  
+  .events-list {
+    flex: 2;
+  }
+  
+  .event-card {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .event-card img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .event-card-content h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  .event-date, .event-distance, .event-category {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 4px;
+  }
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex: 0 0 360px;
+  }
+  
+ 
+  .map-placeholder {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .map-placeholder img:first-child {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+  }
+
+  .map-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 160px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .sidebar img:not(.map-button):not(:first-child) {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  
+  .filters select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    cursor: pointer;
+  }
+   
+  .location-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 16px 0 8px;
+  }
+  
+  .category-filter {
+    margin-bottom: 16px;
+  }
+  
+  .map-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    align-self: flex-start;
+  }
+
+  .custom-footer {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 40px 32px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+  
+  .footer-btn {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    cursor: pointer;
+  }
+  
+  .app-links img {
+    display: block;
+    margin-bottom: 8px;
+    max-width: 140px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .footer-policy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .footer-policy a {
+    color: #aaa;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  
+    .footer-bottom > * {
+      flex: 1;
+    }
+  
+    .footer-policy {
+      justify-content: flex-end;
+    }
+  }
+  
+  
+  
